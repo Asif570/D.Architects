@@ -266,6 +266,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Spons Section Styles  =====================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .spons {
@@ -411,6 +414,10 @@ header {
   .facts-item:hover {
     transform: scale(1);
     box-shadow: 14px 15px 20px 0px #00000063;
+  }
+  /* dream */
+  .dream-box{
+    height: 150px;
   }
   /* for spons  */
   .spons-items {
