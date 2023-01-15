@@ -188,6 +188,9 @@ header {
 .features-bottom-image {
   position: relative;
 }
+.features-bottom-image img {
+  width: 100%;
+}
 /* Feature Button  */
 .features-button {
   position: absolute;
