@@ -309,6 +309,12 @@ header {
   color: #424242;
   line-height: 30px;
 }
+/* Large Devices  */
+@media screen and (max-width: 1450px) and (min-width: 1201px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 /* Responsive Style For Mobile Devices  */
 @media screen and (max-width: 575.99px) {
   .container {
