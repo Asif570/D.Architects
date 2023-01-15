@@ -262,13 +262,20 @@ header {
   width: 100%;
   height: 300px;
   border-radius: 8px;
-  background: url("../images/hope.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: url("../images/hope.jpg"),
+          linear-gradient(90deg, #ff900e, #ff8f0e39);
+        background-repeat: no-repeat, repeat;
+        background-size: cover, cover;
+        background-position: center;
+        background-blend-mode: multiply;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.dream-box h3 {
+  font-size:30px;
+  color: #ffffff;
+  font-weight: 700;
 }
 /* Spons Section Styles  =====================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .spons {
