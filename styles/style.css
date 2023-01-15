@@ -5,9 +5,6 @@
   box-sizing: border-box;
   font-family: "Work Sans";
 }
-body {
-  overflow-x: hidden;
-}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -147,7 +144,7 @@ header {
   margin: 130px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 140px;
+  gap: 150px;
 }
 .features-bottom-tittle {
   font-weight: 700;
@@ -261,27 +258,27 @@ header {
   font-size: 20px;
   color: #727272;
 }
-/* Dream Section Style  ============================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Dream Section Styles ==================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .dream-box {
   width: 100%;
   height: 300px;
-  border-radius: 8px;
-    background: url("../images/hope.jpg"),
-          linear-gradient(90deg, #ff900e, #ff8f0e39);
-        background-repeat: no-repeat, repeat;
-        background-size: cover, cover;
-        background-position: center;
-        background-blend-mode: multiply;
+  background: url("../images/hope.jpg"),
+    linear-gradient(90deg, #ff900e, #ff8f0e30);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 .dream-box h3 {
-  font-size:64px;
+  font-size: 64px;
   color: #ffffff;
   font-weight: 700;
 }
-/* Spons Section Styles  =====================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Spons Section Styles ==================================>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
 .spons {
   margin: 50px 0;
 }
@@ -308,6 +305,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  flex-wrap: wrap;
+  gap: 150px;
 }
 .spons-item img {
   filter: grayscale(100%);
@@ -333,14 +333,50 @@ header {
   color: #424242;
   line-height: 30px;
 }
-/* Large Devices  */
-@media screen and (max-width: 1450px) and (min-width: 1201px) {
+/* Responsive for Extra Large Devices  */
+@media screen and (max-width: 1450px) and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
 }
-/* Responsive Style For Mobile Devices  */
-@media screen and (max-width: 575.99px) {
+/* Responsive for  Large Devices  */
+@media screen and (max-width: 1190px) and (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+  .feature-top-images img {
+    width: 100%;
+  }
+  .features-bottom {
+    gap: 50px;
+  }
+  .features-button {
+    padding: 20px;
+    font-size: 50px;
+    left: -35px;
+    bottom: -55px;
+  }
+  .facts-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Responsive For Medium Devices  */
+@media screen and (max-width: 991.99px) and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+  .features-top {
+    grid-template-columns: 1fr;
+  }
+  .features-bottom {
+    gap: 50px;
+  }
+  .facts-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Responsive For Small Devices  */
+@media screen and (max-width: 767.99px) and (min-width: 100px) {
   .container {
     max-width: 100%;
     padding: 0 5%;
@@ -365,7 +401,7 @@ header {
 
   .header-links ul {
     position: absolute;
-    display: none;
+    display: flex;
     background: #ff8f0e;
     width: max-content;
     padding: 25px 35px;
@@ -379,7 +415,6 @@ header {
   }
 
   .header-links:hover ul {
-    display: flex;
     right: 0;
     top: 50px;
   }
@@ -426,9 +461,12 @@ header {
     transform: scale(1);
     box-shadow: 14px 15px 20px 0px #00000063;
   }
-  /* dream */
-  .dream-box{
+  /* Dream  */
+  .dream-box {
     height: 150px;
+  }
+  .dream-box h3 {
+    font-size: 25px;
   }
   /* for spons  */
   .spons-items {
